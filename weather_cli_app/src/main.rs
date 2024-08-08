@@ -87,7 +87,7 @@ fn main() {
         io::stdin().read_line(&mut country_code).expect("Failed to read input");
         let country_code = country_code.trim();
 
-        let api_key = "facc478bc103461c1416d660ca0b851b";
+        let api_key = "";
 
         match get_weather_info(&city, &country_code, api_key){
             Ok(response) => {
